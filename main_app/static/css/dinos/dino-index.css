@@ -1,0 +1,60 @@
+/* jurassic-park-style.css */
+
+:root {
+  --primary-color: #ffee00;
+  --secondary-color: #cc3300;
+  --background-color: #f5f5f5;
+  --card-border-radius: 8px;
+  --font-xl: 1.5rem;
+  --font-reg: 1rem;
+  --borders: 1px solid #ccc;
+  --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: #333;
+}
+
+.card-container {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 275px;
+  margin: 10px;
+  border: var(--borders);
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--primary-color);
+  border-radius: var(--card-border-radius);
+}
+
+.card-content {
+  padding: 10px;
+  width: 100%;
+}
+
+.usr-img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.card > a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: var(--font-xl);
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: var(--font-reg);
+  color: #333;
+}
