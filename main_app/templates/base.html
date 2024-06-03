@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +9,10 @@
   <link
     rel="shortcut icon"
     type="image/png"
-    href=""
+    href="{% static 'images/dinologo.png' %}"
   >
   <title>Dino Collector</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
   {% endblock %}
 </head>
@@ -18,13 +21,16 @@
     <div class="header-logo-container">
       <a href="/">
         <img 
-          src=""
+          src="{% static 'images/header-logo.svg' %}"
           alt="The Dino Collector Logo"
         >
       </a>
     </div>
     <nav>
       <ul>
+        <!-- new markup below -->
+        <li><a href="/cats">All Cats</a></li>
+        <!-- existing markup -->
         <li><a href="/about">About</a></li>
       </ul>
     </nav>
