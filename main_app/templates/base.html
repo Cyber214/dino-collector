@@ -20,15 +20,20 @@
   <header>
     <nav>
       <ul>
-        <li><a href="/">
-          <img 
+        {% if user.is_authenticated %}
+          <li><a href="/">
+            <img 
             src="{% static 'images/dinologo.jpeg' %}"
             alt="The Dino Collector Logo"
-          >
-        </a></li>
-        <li><a href="{% url 'dino-index' %}">All Dinos</a></li>
-        <li><a href="{% url 'dino-create' %}">Add a Dino</a></li>
-        <li><a href="{% url 'about' %}">All Cats</a></li>
+            >
+          </a></li>
+          <li><a href="{% url 'dino-create' %}">Add a Dino</a></li>
+          <li><a href="{% url 'dino-index' %}">All Dinos</a></li>
+        {% else %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        {% endif %}
       </ul>
     </nav>
   </header>
