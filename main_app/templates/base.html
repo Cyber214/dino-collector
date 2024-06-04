@@ -26,8 +26,9 @@
             alt="The Dino Collector Logo"
           >
         </a></li>
-        <li><a href="/dinos">All Dinos</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="{% url 'dino-index' %}">All Dinos</a></li>
+        <li><a href="{% url 'dino-create' %}">Add a Dino</a></li>
+        <li><a href="{% url 'about' %}">All Cats</a></li>
       </ul>
     </nav>
   </header>

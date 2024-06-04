@@ -18,7 +18,7 @@
 <section class="card-container">
   {% for dino in dinos %}
     <div class="card">
-      <a href="/dinos/{{ dino.id }}/">
+      <a href="{% url 'dino-detail' dino.id %}">
         <div class="card-content">
           <div class="card-img-container">
             <img 

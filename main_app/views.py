@@ -1,5 +1,6 @@
 # We're already importing render from django.shortcuts
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Dino
 
 
@@ -17,3 +18,8 @@ def dino_index(request):
 def dino_detail(request, dino_id):
   dino = Dino.objects.get(id=dino_id)
   return render(request, 'dinos/detail.html', { 'dino': dino })
+
+class DinoCreate(CreateView):
+  model = Dino
+  fields = ['name', 'breed', 'description', 'age']
+  success_url = '/dinos/'
