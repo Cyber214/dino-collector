@@ -18,21 +18,23 @@
 <section class="card-container">
   {% for dino in dinos %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img 
-            src="{% static 'images/sk8r-boi-cat.svg' %}" 
-            alt="A skater boy dino"
-          >
+      <a href="/dinos/{{ dino.id }}/">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="{% static 'images/sk8r-boi-cat.svg' %}" 
+              alt="A skater boy dino"
+            >
+          </div>
+          <h2 class="card-title">{{ dino.name }}</h2>
+          {% if dino.age > 0 %}
+            <p>A {{ dino.age }} year old {{ dino.breed }}</p>
+          {% else %}
+            <p>A {{ dino.breed }} baby.</p>
+          {% endif %}
+          <p><small>{{ dino.description }}</small></p>
         </div>
-        <h2 class="card-title">{{ dino.name }}</h2>
-        {% if dino.age > 0 %}
-          <p>A {{ dino.age }} year old {{ dino.breed }}</p>
-        {% else %}
-          <p>A {{ dino.breed }} baby.</p>
-        {% endif %}
-        <p><small>{{ dino.description }}</small></p>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>

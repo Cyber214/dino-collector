@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/dinos/dino-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="dino-container">
+  <div class="dino-img">
+    <img 
+      src="{% static 'images/sk8r-boi-dino.svg' %}" 
+      alt="A skater boy dino"
+    >
+  </div>
+  <div class="dino-details">
+    <h1>{{ dino.name }}</h1>
+    {% if dino.age > 0 %}
+      <h2>A {{ dino.age }} year old {{ dino.breed }}</h2>
+    {% else %}
+      <h2>A {{ dino.breed }} hatchling.</h2>
+    {% endif %}
+    <p>{{ dino.description }}</p>
+  </div>
+</section>
+
+{% endblock %}

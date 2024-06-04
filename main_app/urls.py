@@ -5,4 +5,5 @@ urlpatterns = [
   path('', views.home, name='home'),
   path('about/', views.about, name='about'),
   path('dinos/', views.dino_index, name='dino-index'),
+  path('dinos/<int:dino_id>/', views.dino_detail, name='dino-detail'),
 ]

@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
+    'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  --nav-bg: rgba(233, 48, 107, 0.7);
+  --nav-bg-ff: rgba(233, 48, 107, 0.9);
+  --borders: rgb(131, 29, 61) solid 2px;
+  --text-color: rgb(255, 255, 255);
+  --link-hover-color: rgb(20, 61, 172);
+  --button-bg: rgb(245, 245, 245);
+  --button-bg-hover: rgb(226, 226, 226);
+  --submit: rgb(26, 128, 0);
+  --warn: rgb(255, 102, 0);
+  --danger: rgb(220, 20, 30);
+  --secondary: rgb(57, 57, 57);
+  --card-box-shadow: 5px 5px 6px -1px #AAA;
+  --font-xtreme: 4.2rem;
+  --font-xxl: 3.6rem;
+  --font-xl: 2.4rem;
+  --font-l: 1.8rem;
+  --font-reg: 1.6rem;
+  --card-border-radius: 6px;
+}
+
+.dino-container {
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dino-img {
+  width: 75%;
+  max-width: 350px;
+}
+
+.dino-img img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+.dino-details {
+  width: 98%;
+}
+
+.dino-details h1 {
+  font-size: var(--font-xxl);
+  margin: 15px 0 3px;
+}
+
+.dino-details h2 {
+  font-size: var(--font-xl);
+  margin: 0 0 10px;
+}
+
+.dino-details p {
+  font-size: var(--font-reg);
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .dino-container {
+    padding: 35px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .dino-img {
+    width: 25%;
+    max-width: 250px;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .dino-container {
+    padding: 0 40px;
+  }
+}
