@@ -27,8 +27,10 @@
             alt="The Dino Collector Logo"
             >
           </a></li>
-          <li><a href="{% url 'dino-create' %}">Add a Dino</a></li>
           <li><a href="{% url 'dino-index' %}">All Dinos</a></li>
+          <li><a href="{% url 'dino-create' %}">Add a Dino</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'logout' %}">Log out</a></li>
         {% else %}
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'home' %}">Login</a></li>

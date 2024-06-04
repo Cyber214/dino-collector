@@ -13,4 +13,4 @@ class Dino(models.Model):
     return self.name
     
   def get_absolute_url(self):
-    return reverse('dino-detail', kwargs={'dino_id': self.id})
+    return reverse('dino-detail', kwargs={'pk': self.id})
