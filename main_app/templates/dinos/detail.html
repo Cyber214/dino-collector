@@ -26,6 +26,10 @@
       <h2>A {{ dino.breed }} hatchling.</h2>
     {% endif %}
     <p>{{ dino.description }}</p>
+    <div class="dino-actions">
+      <a href="{% url 'dino-update' dino.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'dino-delete' dino.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 
