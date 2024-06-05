@@ -1,8 +1,8 @@
 # Dino Collector
 ***
 
-![screenshot of dino list](public/assets/img/dino-list.png)
-![screenshot of dino details](public/assets/img/dino-details.png)
+![screenshot of dino list](main_app/static/images/dino-list.png)
+![screenshot of dino details](main_app/static/images/dino-details.png)
 
 # [Try Dino Collector here](https://dinocollector.fly.dev)⬅
 
