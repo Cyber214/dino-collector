@@ -17,6 +17,7 @@ img {
 .dino-details {
   text-align: center; /* Center text inside this container */
   padding: 0 20px;
+  color: #fff;
 }
 
 .dino-details h1 {

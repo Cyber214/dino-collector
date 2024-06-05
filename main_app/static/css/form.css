@@ -8,6 +8,7 @@
 .page-header h1 {
   font-size: var(--font-xxl);
   margin: 0;
+  color: white;
 }
 
 .page-header img {
@@ -30,6 +31,7 @@
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
   background-color: var(--button-bg);
+  color: white;
 }
 
 table {

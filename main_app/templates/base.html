@@ -32,6 +32,12 @@
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'logout' %}">Log out</a></li>
         {% else %}
+          <li><a href="/">
+            <img class="navlogo"
+            src="{% static 'images/dinologo.png' %}"
+            alt="The Dino Collector Logo"
+            >
+          </a></li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'home' %}">Login</a></li>
           <li><a href="{% url 'signup' %}">Sign Up</a></li>

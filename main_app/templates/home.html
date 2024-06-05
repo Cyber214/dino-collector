@@ -18,6 +18,10 @@
       <button type="submit" class="btn submit">Login</button>
     </form>
   </section>
+{% else %}
+<section>
+  <img src="{% static 'images/landing.jpeg' %}" alt="A dino using a computer"/>
+</section>
 {% endif %}
 
 {% endblock %}

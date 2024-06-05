@@ -4,6 +4,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+  color: white;
 }
 
 main > section {
@@ -88,6 +89,7 @@ main > section {
 
 img {
   height: 45vh;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
