@@ -11,8 +11,8 @@
 }
 
 .page-header img {
-  height: 40px;
-  margin-left: 15px;
+  height: 15vh;
+  border-radius: 5px;
 }
 
 .page-header img:first-of-type {

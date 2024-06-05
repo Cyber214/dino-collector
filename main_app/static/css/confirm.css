@@ -9,10 +9,10 @@
   font-size: 3.5em; /* Increased font size */
 }
 
-.page-header img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+img {
+  margin-bottom: 20px; /* Added space between image and text */
+  border-radius: 5px;
+  height: 30vh;
 }
 
 h2 {

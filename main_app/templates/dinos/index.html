@@ -13,6 +13,10 @@
 
 <section class="page-header">
   <h1>Dino List</h1>
+  <br>
+  <img src="{% static 'images/blue-d.jpeg' %}" alt="A blue dino">
+  <img src="{% static 'images/white-d.jpeg' %}" alt="A white dino">
+  <img src="{% static 'images/yellow-d.jpeg' %}" alt="A yellow dino">
 </section>
 
 <section class="card-container">
@@ -22,8 +26,8 @@
         <div class="card-content">
           <div class="card-img-container">
             <img 
-              src="{% static 'images/sk8r-boi-cat.svg' %}" 
-              alt="A skater boy dino"
+              src="{% static 'images/red-d.jpeg' %}" 
+              alt="A red dino"
             >
           </div>
           <h2 class="card-title">{{ dino.name }}</h2>
@@ -32,7 +36,6 @@
           {% else %}
             <p>A {{ dino.breed }} baby.</p>
           {% endif %}
-          <p><small>{{ dino.description }}</small></p>
         </div>
       </a>
     </div>

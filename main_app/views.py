@@ -38,7 +38,7 @@ class DinoCreate(LoginRequiredMixin, CreateView):
 
 class DinoUpdate(LoginRequiredMixin, UpdateView):
   model = Dino
-  fields = ['species', 'description', 'age']
+  fields = ['breed', 'description', 'age']
 
 class DinoDelete(LoginRequiredMixin, DeleteView):
   model = Dino

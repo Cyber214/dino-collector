@@ -10,10 +10,11 @@
 <div class="page-header">
   {% if dino %}
   <h1>Edit {{ dino.name }}</h1>
+  <img src="{% static 'images/fish-d.jpeg' %}" alt="An aquatic dino"/>
   {% else %}
   <h1>Add a Dino</h1>
+  <img src="{% static 'images/form-d.jpeg' %}" alt="A dino eating"/>
   {% endif %}
-  <img src="{% static 'images/nerd-dino.svg' %}" alt="A dino using a computer"/>
 </div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}

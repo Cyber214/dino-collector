@@ -1,8 +1,20 @@
 /* dinos/dino-index.css */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
 
 .page-header {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.page-header img {
+  height: 10vh;
+  margin-left: 15px;
+  border-radius: 50%;
 }
 
 .page-header h1 {
@@ -23,9 +35,11 @@
 .card {
   width: 300px;
   margin: 20px;
-  border: 1px solid #ccc;
+  border: var(--borders);
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
 }
 
 .card-content {
@@ -39,6 +53,7 @@
 .card-img-container img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .card-title {
@@ -54,5 +69,9 @@
 
 .card-content p small {
   font-size: 1em; /* Increased font size */
-  color: #777;
+  color: #ffffff;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
 }

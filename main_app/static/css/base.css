@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   --nav-bg: rgba(233, 48, 107, .7);
   --nav-bg-ff: rgba(233, 48, 107, .7);
-  --borders: rgb(131, 29, 61) solid 2px;
+  --borders: rgb(131, 29, 61) solid 5px;
   --text-color: rgb(255, 255, 255);
   --link-hover-color: rgb(20, 61, 172);
   --button-bg: rgb(245, 245, 245);
@@ -56,7 +56,10 @@ nav {
   width: 100%;
   background-color: var(--nav-bg); /* Change to --nav-bg */
   border-bottom: var(--borders);
-  padding: 10px;
+}
+
+.navlogo{
+  height: 7vh;
 }
 
 ul {

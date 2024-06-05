@@ -28,6 +28,7 @@ main > section {
 }
 
 .login {
+  margin-;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,6 +62,32 @@ main > section {
   align-self: flex-end;
   margin-right: 0;
   margin-top: 16px;
+  color: rgb(26, 128, 0);
+  border-color: rgb(26, 128, 0);
+}
+
+.login .btn {
+  align-self: flex-end;
+  font-size: var(--font-l);
+  padding: 8px 16px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  background-color: var(--button-bg);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+.login .btn {
+  color: var(--submit);
+  border-color: var(--submit);
+}
+
+img {
+  height: 45vh;
 }
 
 @media only screen and (min-width: 768px) {
